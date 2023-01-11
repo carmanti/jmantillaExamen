@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jmantillaExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Label x:Name="lblUsuario" TextColor="Blue"></Label>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <!--<RowDefinition  />-->
+                    <RowDefinition  />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Label Text="Nombre" Grid.Row="0" Grid.Column="0"/>
+                <Label x:Name="txtNombre" Grid.Row="0" Grid.Column="1"></Label>
+                <Label Text="Total" Grid.Row="1" Grid.Column="0"/>
+                <Label x:Name="lblTotal" Grid.Row="1" Grid.Column="1" TextColor="Red"/>
+
+            </Grid>
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

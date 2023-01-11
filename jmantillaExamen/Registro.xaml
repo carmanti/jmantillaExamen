@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jmantillaExamen.Registro">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <!--<Label Text="Prueba"/>-->
+            <Label x:Name="lblUsuario" TextColor="Blue"></Label>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <!--<RowDefinition  />-->
+                    <RowDefinition  />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Label Text="Nombre" FontSize="18" Grid.Row="0" Grid.Column="0"></Label>
+                <Entry x:Name="txtNombre" Placeholder="Ingrese su nombre" Grid.Row="0" Grid.Column="1"></Entry>
+                <Label Text="Monto Inicial" FontSize="18" Grid.Row="1" Grid.Column="0"></Label>
+                <Entry x:Name="txtMontoInicial" Placeholder="Ingrese Monto Inicial" Grid.Row="1" Grid.Column="1"></Entry>
+                <Label Text="Pago Mensual" FontSize="18" Grid.Row="2" Grid.Column="0"/>
+                <Label FontSize="18" Grid.Row="2" Grid.Column="1" x:Name="lblPagoMensual" TextColor="Red"/>
+                <!--<Entry x:Name="txtPagoMensual" FontSize="18" Grid.Row="2" Grid.Column="1" Placeholder="Valor Pago Mensual"/>-->
+            </Grid>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Text="Calcular" Grid.Row="0" Grid.Column="0" Clicked="Button_Clicked"/>
+                <Button Text="Guardar" Grid.Row="0" Grid.Column="1" BackgroundColor="GreenYellow" Clicked="Button_Clicked_1"/>
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
